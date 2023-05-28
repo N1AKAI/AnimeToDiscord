@@ -1,0 +1,112 @@
+/* Dashboard */
+.maintenance-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    font-size: 70px;
+    background-color: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+/* Settings */
+
+.settings-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+input.ui-toggle {
+    position: relative;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 40px;
+    background-color: #c6c6c6;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 20%);
+}
+
+input:checked.ui-toggle {
+    background-color: #03a9f4;
+}
+
+input.ui-toggle::before,
+input:checked.ui-toggle::before {
+    content: '';
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0 0 0 / 0.2);
+}
+
+input:checked.ui-toggle::before {
+    left: 20px;
+}
+
+.nav-tabs {
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.nav-tabs>li {
+    margin-bottom: -1px;
+}
+
+.nav-tabs>li>a {
+    margin-bottom: 2px;
+    line-height: 1.5;
+    padding: 15px;
+    border: 1px solid;
+    border-color: #c3c4c7 transparent #c3c4c7 #c3c4c7;
+    border-radius: 4px 0 0 4px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    /* border-color: transparent; */
+}
+
+.tab-content {
+    flex-grow: 1;
+    border: 1px solid;
+    border-color: #c3c4c7 #c3c4c7 #c3c4c7 transparent;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.tab-pane.active {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+}
+
+/* Settings */
